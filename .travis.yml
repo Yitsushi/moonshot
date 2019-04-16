@@ -10,3 +10,7 @@ sudo: false
 rvm:
   - 2.1
   - 2.2
+
+before_install:
+  - gem i rubygems-update -v '<3' && update_rubygems
+  - gem install bundler
